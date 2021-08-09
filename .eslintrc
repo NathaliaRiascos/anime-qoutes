@@ -29,7 +29,7 @@
       "jsx-quotes": ["error", "prefer-single"],
       "key-spacing" : ["error", { "afterColon": true }],
       "no-var": "error",
-      "keyword-spacing": ["error", { "before": true }, { "after": true }],
+      "keyword-spacing": ["error", { "before": true , "after": true }],
       "react/jsx-indent" : [2,2],
       "arrow-spacing": "error",
       "comma-spacing": ["error", { "before": false, "after": true }]     
