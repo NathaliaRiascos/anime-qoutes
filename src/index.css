@@ -1,3 +1,27 @@
+:root{
+  --color-principal: #6B1D3B;
+  --color-fuente: #787878;
+  --fondo: #fafafa;
+  --fondo-input: #f0f0f0;
+  --principal-claro: rgba(107, 29, 59, 0.6);
+}
+
+html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", "Oxygen",sans-serif;
+  font-size: 16px;
+  color: var(--color-fuente);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,*:before, *:after{
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

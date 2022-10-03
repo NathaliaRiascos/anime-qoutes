@@ -1,17 +1,16 @@
 import React from 'react'
 import './App.css';
-import fondo from 'images/fondo.png'
-import Buscador from 'components/Buscador'
-import Quotes from 'components/Quotes'
+// import fondo from 'images/fondo.png'
+import { Buscador, Quotes } from 'components'
 import { AnimeContext } from 'context/AnimeContext'
 
 function App() {
   return (
     <div className='Contenedor'>
-      <img className='Img-fondo' src={fondo}/>
+      {/* <div className='Contenedor__img'></div> */}
       <AnimeContext>
         <div className='Contenido'>
-          <h1 className='title'>Anime Quotes</h1>
+          <h1 className='Contenido__title'>Anime Quotes</h1>
           <Buscador />
           <Quotes />
         </div>

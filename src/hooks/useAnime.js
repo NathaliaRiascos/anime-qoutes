@@ -10,7 +10,6 @@ export default function useAnime () {
     if (!anime) return
     getAnime(anime).then(data => {
       saveQuotes(data)
-      console.log(data)
     })
         
   }, [anime])
