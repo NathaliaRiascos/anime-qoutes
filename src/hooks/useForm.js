@@ -1,6 +1,6 @@
 import { useState } from  'react'
 import PropTypes from 'prop-types';
-import useAnime from 'hooks/useAnime'
+import { useAnime } from 'hooks/'
 
 export const useForm = (initialState = {}) => {
 

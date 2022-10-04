@@ -175,6 +175,7 @@ body{
 
   .Container__quote {
     gap: 30px;
+    width: 660px;
   }
 
   .Btn__flecha {

@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-const Context = React.createContext({})
+const AnimeContext = React.createContext({})
 
-export function AnimeContext({children}) {
+export function AnimeProvider({children}) {
+  const [quotes, saveQuotes] = useState([])
 
-  const [qoutes, saveQuotes] = useState([])
-
-  return <Context.Provider value={{qoutes, saveQuotes}}>
+  return <AnimeContext.Provider value={{quotes, saveQuotes}}>
     {children}
-  </Context.Provider>
+  </AnimeContext.Provider>
 }
 
-AnimeContext.propTypes = {
+AnimeProvider.propTypes = {
   children: PropTypes.element
 }
-export default Context
+export default AnimeContext
